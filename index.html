@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta author="André Antunes">
+    <meta description="Website de viagens">
+    <meta keywords="html, css, javaScript, Website, site responsivo, viagem, turismo">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!--=== Barra de navegação fixa, com menu ===-->
+    <nav>
+        <div class="logo">Travel</div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#passeios">Passeios</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#avaliacoes">Avaliações</a>
+        </div>
+    </nav>
+
+    <!--=== Banner, calendário ===-->
+    <header>
+        <div class="titulo">
+            Explore o Mundo!
+        </div>
+
+        <div class="booking">
+            <form>
+                <div>
+                    <label for="destino">Para onde vamos?</label>
+                    <input type="text" id="destino">
+                </div>
+
+                <div>
+                    <label for="partida">Quando?</label>
+                    <input type="date" id="partida">
+                </div>
+
+                <div>
+                    <label for="retorno">Retorno</label>
+                    <input type="date" id="retorno">
+                </div>
+
+                <button type="button">Buscar</button>
+            </form>
+        </div>
+    </header>
+
+    <!--=== Passeios ===-->
+    <section class="passeios" id="passeios">
+        <div class="info-passeio">
+            <h1>Próximos Passeios & Destinos</h1>
+            <hr>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat eveniet eum vel. Asperiores facere sunt esse, ad itaque unde atque voluptatibus at tenetur, necessitatibus saepe minima, porro voluptatem omnis est!
+            </p>
+            <button>Saiba mais</button>
+        </div>
+
+        <div>
+            <div class="fotos-passeio">
+                <div class="foto">
+                    <img src="./img/travel01.jpg" alt="Passeio 1">
+                </div>
+            </div>
+            <div class="fotos-passeio">
+                <div class="foto">
+                    <img src="./img/travel02.jpg" alt="Passeio 2">
+                </div>
+            </div>
+            <div class="fotos-passeio">
+                <div class="foto">
+                    <img src="./img/travel03.jpg" alt="Passeio 3">
+                </div>
+            </div>
+            <div class="fotos-passeio">
+                <div class="foto">
+                    <img src="./img/travel04.jpg" alt="Passeio 4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=== Destinos ===-->
+    <section class="destinos" id="destinos">
+        <h1>Para onde você quer viajar?</h1>
+
+        <div class="grupo-destinos">
+            <!--Destino 1-->
+            <div class="card-destino">
+                <img src="./img/Barcelona.jpg" alt="Barcelona">
+
+                <div>
+                    <span>Barcelona</span>, Espanha
+
+                    <p>Commodi, autem similique nesciunt perspiciatis exercitationem ea maxime rem porro aut reprehenderit dolorum perferendis suscipit accusantium, totam in omnis neque.</p>
+
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Destino 2-->
+            <div class="card-destino">
+                <img src="./img/Porto.jpg" alt="Porto">
+
+                <div>
+                    <span>Porto</span>, Portugual
+
+                    <p>Commodi, autem similique nesciunt perspiciatis exercitationem ea maxime rem porro aut reprehenderit dolorum perferendis suscipit accusantium, totam in omnis neque.</p>
+
+                    <div class="valor">
+                        <h3>R$ 3.700,00</h3>
+                        <span>R$ 4.300,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Destino 3-->
+            <div class="card-destino">
+                <img src="./img/Milan.jpg" alt="Milão">
+
+                <div>
+                    <span>Milão</span>, Itália
+
+                    <p>Commodi, autem similique nesciunt perspiciatis exercitationem ea maxime rem porro aut reprehenderit dolorum perferendis suscipit accusantium, totam in omnis neque.</p>
+
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Destino 4-->
+            <div class="card-destino">
+                <img src="./img/London.jpeg" alt="Londres">
+
+                <div>
+                    <span>Londres</span>, Inguaterra
+
+                    <p>Commodi, autem similique nesciunt perspiciatis exercitationem ea maxime rem porro aut reprehenderit dolorum perferendis suscipit accusantium, totam in omnis neque.</p>
+
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Destino 5-->
+            <div class="card-destino">
+                <img src="./img/Lauterbrunnen.jpeg" alt="Lauterbrunnen">
+
+                <div>
+                    <span>Lauterbrunnen</span>, Suiça
+
+                    <p>Commodi, autem similique nesciunt perspiciatis exercitationem ea maxime rem porro aut reprehenderit dolorum perferendis suscipit accusantium, totam in omnis neque.</p>
+
+                    <div class="valor">
+                        <h3>R$ 3.900,00</h3>
+                        <span>R$ 4.400,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Destino 6-->
+            <div class="card-destino">
+                <img src="./img/Paris.jpg" alt="Paris">
+
+                <div>
+                    <span>Paris</span>, França
+
+                    <p>Commodi, autem similique nesciunt perspiciatis exercitationem ea maxime rem porro aut reprehenderit dolorum perferendis suscipit accusantium, totam in omnis neque.</p>
+
+                    <div class="valor">
+                        <h3>R$ 4.500,00</h3>
+                        <span>R$ 5.300,00</span>
+                    </div>
+
+                    <div class="card-btn">
+                        <button>Saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=== Avaliações ===-->
+    <section class="avaliacoes" id="avaliacoes">
+        <h1>Avaliações dos clientes</h1>
+
+        <div class="carrosel">
+            <div class="cliente">
+                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur vel minima laboriosam cum error minus saepe numquam nihil animi."</p>
+
+                <img src="./img/cliente01.png" alt="Cliente 1">
+                <p><span>Patícia</span>, Jornalista</p>
+            </div>
+        </div>
+
+        <div class="carrosel">
+            <div class="cliente">
+                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur vel minima laboriosam cum error minus saepe numquam nihil animi."</p>
+
+                <img src="./img/cliente02.png" alt="Cliente 2">
+                <p><span>Isabel</span>, Médica</p>
+            </div>
+        </div>
+
+        <div class="carrosel">
+            <div class="cliente">
+                <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur vel minima laboriosam cum error minus saepe numquam nihil animi."</p>
+
+                <img src="./img/cliente03.png" alt="Cliente 3">
+                <p><span>Alexandre</span>, Advogado</p>
+            </div>
+        </div>
+
+        <button class="anterior">&#10094;</button>
+        <button class="proximo">&#10095;</button>
+    </section>
+
+    <!--=== Rodapé ===-->
+    <footer>
+        <div class="empresa">
+            <h1 class="logo">Travel</h1>
+
+            <p><span>Travel viagens e turismo S.A</span>
+            Avenida da Boa Vista, 1234 Porto, Portugual</p>
+
+            <p>Travel viagens e turismo S.A &copy; Todos os direitos reservados 2024</p>
+
+            <div class="parceiros">
+                <h3>Nossos Parceiros</h3>
+
+                <p>Lorem ipsum dolor</p>
+                <p>Voluptatibus nemo</p>
+                <p>In autem sunt</p>
+                <p>Labore quia quisquam placeat</p>
+                <p>Veniam dolore, incidunt</p>
+                <p>Reiciendis enim</p>
+                <p>Totam necessitatibus</p>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <h3>Assine a Nossa Newslatter</h3>
+
+            <div class="input-group">
+                <input type="text" placeholder="Informe seu E-mail">
+            </div>
+
+            <button>Enviar</button>
+
+            <hr>
+
+            <h3>Siga Nossas Redes Sociais</h3>
+
+            <div class="rede-social">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+        </div>
+    </footer>
+
+    <div class="rodape"></div>
+</body>
+
+    <script src="./js/script.js"></script>
+</html>

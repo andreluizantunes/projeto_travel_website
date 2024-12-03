@@ -45,8 +45,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--cor-principal);
-    /*background-color: var(--cor-pricipal-alpha);*/
+    background-color: var(--cor-pricipal-alpha);
     padding: 0.6rem 3rem;
     color: var(--cor-01);
     letter-spacing: 0.1rem;
@@ -62,7 +61,7 @@ nav {
     font-size: 1.5rem;
 }
 
-.menu a {
+.menu a, .drop-content a {
     text-decoration: none;
     color: var(--cor-01);
     font-weight: 700;
@@ -70,7 +69,7 @@ nav {
     transition: 0.5s;
 }
 
-.menu a:hover {
+.menu a:hover, .drop-content a:hover {
     color: var(--cor-destaque);
 }
 
@@ -149,7 +148,7 @@ button:hover {
 section {
     margin: 2.5rem auto;
     padding: 6rem 3rem;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 
@@ -164,7 +163,7 @@ section {
 }
 
 .passeios hr {
-    margin: 1rem;
+    margin: 1rem 0;
     border: solid var(--cor-destaque);
     border-radius: 1rem;
     width: 15rem;
@@ -198,4 +197,412 @@ section {
 .foto img {
     width: 100%;
     display: flex;
+}
+
+
+/* === Destinos === */
+.destinos {
+    background: linear-gradient(
+        50deg,
+        var(--cor-gradiente-01),
+        var(--cor-gradiente-02)
+    );
+}
+
+.destinos h1 {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-principal);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.grupo-destinos {
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3rem 1.2rem;
+}
+
+.card-destino {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-01);
+    border-radius: 0.5rem;
+    box-shadow: var(--sombra);
+}
+
+.card-destino img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+}
+
+.card-destino > div {
+    padding: 1rem;
+}
+
+.card-destino span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-destino p {
+    margin: 1rem 0;
+    text-align: justify;
+    color: var(--cor-03)
+}
+
+.valor {
+    display: flex;
+    justify-content: end;
+    align-items: baseline;
+    margin: 1rem auto;
+}
+
+.valor div {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+.valor span {
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    color: var(--cor-03);
+    margin-left: o.5rem;
+}
+
+.card-btn {
+    text-align: right;
+}
+
+
+/* === Avaliações === */
+.avaliacoes {
+    text-align: center;
+    width: 75%;
+    min-height: 50vh;
+    margin: 1rem auto;
+    padding: 6rem 3rem 2rem;
+}
+
+.avaliacoes h1 {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-principal)
+}
+
+.avaliacoes p {
+    margin: 1rem auto;
+    color: var(--cor-03);
+}
+
+.avaliacoes img {
+    border: solid 0.2rem var(--cor-destaque);
+    border-radius: 50%;
+    background-color: var(--cor-destaque);
+    outline: none;
+    width: 10rem;
+}
+
+.avaliacoes span {
+    font-weight: 700;
+}
+
+.carrossel {
+    position: relative;
+    padding: 0 5rem;
+    margin: auto;
+}
+
+.carrossel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--cor-05);
+    color: var(--cor-01);
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.3s;
+}
+
+.carrossel button:hover {
+    background-color: var(--cor-03);
+}
+
+.anterior {
+    left: 0;
+}
+
+.proximo {
+    right: 0;
+}
+
+
+/* === Rodapé === */
+footer {
+    background-color: var(--cor-04);
+    color: var(--cor-02);
+    padding: 2rem 5rem;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+footer div {
+    flex: 1;
+    padding: 0 0.3 rem;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+footer .input-group {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0 0.5rem
+}
+
+footer input {
+    background-color: var(--cor-01);
+    color: var(--cor-04);
+    letter-spacing: 0.1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.1rem;
+    width: 100%;
+}
+
+footer button {
+    padding: 0.3rem 1.4rem;
+    border-radius: 0.3rem;
+}
+
+footer hr {
+    margin: 1rem 0; 
+}
+
+.empresa p {
+    margin: 2rem 0;
+}
+
+.empresa span {
+    font-weight: 700;
+    display: block;
+}
+
+.rede-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.rede-social i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border: solid 0.15rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.rede-social i:hover {
+    color: var(--cor-destaque);
+    border-color: var(--cor-destaque);
+}
+
+.rodape {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--cor-principal);
+}
+
+
+/* ==== Menu Hamburguer ==== */
+.drop-menu {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.drop-button {
+    padding: 0;
+    padding-bottom: 0.25rem;
+    background-color: inherit;
+}
+
+.barra {
+    width: 2rem;
+    height: 0.28rem;
+    transition: 0.3s;
+    margin-top: 0.3rem;
+    border-radius: 0.2rem;
+    background-color: var(--cor-01);
+}
+
+.drop-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 3rem;
+    right: 0;
+    background-color: var(--cor-pricipal-alpha);
+    box-shadow: var(--sombra);
+}
+
+.drop-content a {
+    display: flex;
+}
+
+.drop-content a:hover {
+    color: var(--cor-destaque);
+}
+
+.drop-menu:hover .drop-content{
+    display: block;
+}
+
+
+
+
+/* ==== Media Queries ==== */
+
+/* Extra small (xs): smarthphone (portrait - retrato) */
+@media (min-width: 0px) {
+    /*--Nav bar--*/
+    nav {
+        padding: 0;
+        padding-left: 1rem;
+        background-color: var(--cor-principal);
+    }
+
+    .drop-content {
+        background-color: var(--cor-principal);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .drop-menu {
+        display: block;
+    }
+
+    /*--Header--*/
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .booking {
+        padding: 0.8rem;
+    }
+
+    .booking form {
+        flex-direction: column;
+    }
+
+    form input {
+        width: 100%;
+        margin-bottom: 0.6rem;
+    }
+
+    section {
+        padding: 6rem 2rem;
+    }
+
+    /*-- passeios --*/
+    .passeios {
+        flex-direction: column;
+    }
+
+    .fotos-passeio {
+        margin-top: 3rem;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    /*-- Destinos --*/
+    .grupo-destinos {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /*-- Avaliações --*/
+    .avaliacoes {
+        width: 100%;
+    }
+
+    .carrossel {
+        padding: 0;
+    }
+
+    /*-- footer --*/
+    footer {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    footer h3 {
+        margin-top: 2rem;
+    }
+
+    .empresa p {
+        margin: 1rem 0;
+    }
+}
+
+/* Small (sm): Smartphone (landscape - paisagem) */
+@media (min-width: 576px) {
+    section {
+        padding: 6rem 4rem;
+    }
+}
+
+/* Medium (md): Tablet */
+@media (min-width: 768px) {
+    section {
+        padding: 6rem 2rem;
+    }
+
+    .booking {
+        padding: 0.8rem 3rem;
+    }
+
+    .foto {
+        width: calc(50% - 0.5rem);
+    }
+
+    .grupo-destinos {
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 3rem 1.2rem;
+    }
+
+    footer {
+        padding: 2rem 6rem;
+    }
+}
+
+/* Large (1g): Notebook */
+@media (min-width: 992px) {
+    nav {
+        padding: 0.6rem 3rem;
+        background-color: var(--cor-pricipal-alpha);
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .drop-menu {
+        display: none;
+    }
 }

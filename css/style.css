@@ -44,6 +44,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.5s ease;
 
     background-color: var(--cor-pricipal-alpha);
     padding: 0.6rem 3rem;
@@ -54,6 +55,10 @@ nav {
     z-index: 10;
     top: 0;
     left: 0;
+}
+
+.navbar-solida {
+    background-color: var(--cor-principal);
 }
 
 .logo {
@@ -422,7 +427,6 @@ footer hr {
     background-color: var(--cor-principal);
 }
 
-
 /* ==== Menu Hamburguer ==== */
 .drop-menu {
     padding: 0.5rem 1rem;
@@ -462,10 +466,9 @@ footer hr {
     color: var(--cor-destaque);
 }
 
-.drop-menu:hover .drop-content{
+.drop-menu:hover .drop-content {
     display: block;
 }
-
 
 
 
@@ -604,5 +607,65 @@ footer hr {
 
     .drop-menu {
         display: none;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .booking {
+        padding: 0.8rem 3rem;
+    }
+
+    .booking form {
+        flex-direction: row;
+        align-items: last baseline;
+    }
+
+    form input {
+        width: 80%;
+    }
+
+    section {
+        padding: 6rem 3rem;
+    }
+
+    .passeios {
+        flex-direction: row;
+    }
+
+    .info-passeio {
+        padding-right: 3rem;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    .avaliacoes {
+        width: 75%;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    footer h3 {
+        margin-top: 0;
+    }
+}
+
+/* Extra Large (x1): Desktop */
+@media (min-width: 1200px) {
+    .foto {
+        width: calc(50% - 0.5rem);
+    }
+
+    .grupo-destinos {
+        grid-template-columns: auto auto auto;
+    }
+
+    .carrossel {
+        padding: 0 5rem;
     }
 }
